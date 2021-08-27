@@ -1,167 +1,226 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="en">
   <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>AirAsia Virtual Airlines</title>
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
-
+    <title>AirAsia Virtual Airlines - Infinite Flight</title>
     <style>
+      section{
+        padding-top: 5rem;
+
+      }
       .nav-pills .nav-link.active {
-        background-color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        color: #ff0000 !important;
+    }
+    .nav-link{
+      color:white !important;
     }
     </style>
   </head>
-
   <body>
-    <!--  Navbar  -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark shadow" style="background-color: #ff0000">
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark shadow-sm" style="background-color: #ff0000">
       <div class="container">
-        <a class="navbar-brand fw-bold fs-1" href="#">AirAsia VA</a>
+        <a class="navbar-brand fs-3 fw-bold" href="#">AirAsia VA</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse fw-bold fs-5" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto fs-6">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Route</a>
+              <a class="nav-link" href="#fleet">Fleet</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Fleet</a>
+              <a class="nav-link" href="#route">Route</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Event</a>
+              <a class="nav-link" href="#event">Event</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Team</a>
+              <a class="nav-link" href="#team">Team</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Policies</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="">Register</a>
+              <a class="nav-link" href="#policies">Policies</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="">Login</a>
+              <a class="nav-link" href="#rank">Rank System</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Register</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <!-- End Navbar  -->
+    <!-- End Navbar -->
 
     <!-- Hero -->
-    <section id="home" class="row flex-lg-row-reverse align-items-center text-white mt-5" style="background-image: url('img/bg-image.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat">
-      <div class="col-lg-6 mt-5">
-        <img src="img/LogoAVA2.png" class="d-block mx-lg-auto img-fluid p-5" alt="Logo AVA" width="700" height="500" loading="lazy" />
+      <div class="row flex-lg-row-reverse align-items-center text-white mt-5" style="background-image: url('img/bg-image.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat">
+        <div class="col-lg-6 mt-5">
+          <img src="img/LogoAVA2.png" class="d-block mx-lg-auto img-fluid p-5" alt="Logo AVA" width="700" height="500" loading="lazy" />
+        </div>
+        <div class="col-lg-6 px-5">
+          <img class="mt-4 mb-4" src="img/ifvarbapproved.png" alt="" />
+          <h1 class="display-5 fw-bold lh-1">Welcome to</h1>
+          <h1 class="display-5 fw-bold lh-1 mb-3">AirAsia Virtual Airlines</h1>
+          <p class="lead fst-italic fs-4">We Are Infinite Flight Community From Indonesia! Let’s fly together, have fun together, and enjoy the beauty of Asia with AirAsia!</p>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#ff0000"
+            fill-opacity="1"
+            d="M0,96L30,90.7C60,85,120,75,180,90.7C240,107,300,149,360,186.7C420,224,480,256,540,250.7C600,245,660,203,720,181.3C780,160,840,160,900,170.7C960,181,1020,203,1080,208C1140,213,1200,203,1260,181.3C1320,160,1380,128,1410,112L1440,96L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
+          ></path>
+        </svg>
       </div>
-      <div class="col-lg-6 px-5">
-        <img class="mt-4 mb-4" src="img/ifvarbapproved.png" alt="" />
-        <h1 class="display-5 fw-bold lh-1">Welcome to</h1>
-        <h1 class="display-5 fw-bold lh-1 mb-3">AirAsia Virtual Airlines</h1>
-        <p class="lead fst-italic fs-4">We Are Infinite Flight Community From Indonesia! Let’s fly together, have fun together, and enjoy the beauty of Asia with AirAsia!</p>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#ff0000"
-          fill-opacity="1"
-          d="M0,96L30,90.7C60,85,120,75,180,90.7C240,107,300,149,360,186.7C420,224,480,256,540,250.7C600,245,660,203,720,181.3C780,160,840,160,900,170.7C960,181,1020,203,1080,208C1140,213,1200,203,1260,181.3C1320,160,1380,128,1410,112L1440,96L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!--  End Hero -->
+    <!-- End Hero -->
 
-    <!-- Why Us? -->
-    <section class="flex py-5" id="whyus" style="background-color: #ff0000">
-      <div class="row flex text-center text-white px-5">
-        <h2 class="display-5 fw-bold lh-1 mb-3">Why we are Different?</h2>
-        <p class="lead fs-4">
-          AirAsia VA gives you quite a variety of flight routes in many countries in Asia. You will enjoy and experience unforgettable scenery when you fly some of our routes. Such as land the plane at the shortest airport, at airport with
-          difficult approach, at airport with mountains around, at the biggest or bussiest or even the most beautiful airport in real world.
-        </p>
-        <p class="lead fs-4">We also offer you:</p>
-      </div>
-      <div class="row flex justify-content-center text-center text-white">
-        <div class="col-lg-6 px-5 text-center">
-          <i class="bi bi-globe2" style="font-size: 6rem"></i>
-          <p class="fs-3 fw-bolder">REALISM</p>
-          <p class="fs-4">We try to offer an experience that closely by having the same routes and aircraft with the real AirAsia Airlines.</p>
+    <!-- Why Us -->
+    <section id="whyus" style="background-color: #ff0000;">
+      <div class="container text-white">
+        <div class="row text-center mb-5">
+          <div class="col">
+            <h2 class="display-5 fw-bold lh-1 mb-3">Why we are Different?</h2>
+          </div>
         </div>
-        <div class="col-lg-6 px-5 text-center">
-          <i class="bi bi-people-fill" style="font-size: 6rem"></i>
-          <p class="fs-3 fw-bolder">FRIENDLY</p>
-          <p class="fs-4">We try to offer a friendly community that you’ll feel right at home.</p>
+        <div class="row text-center">
+          <div class="col">
+            <p class="lead">
+              AirAsia VA gives you quite a variety of flight routes in many countries in Asia. You will enjoy and experience unforgettable scenery when you fly some of our routes. Such as land the plane at the shortest airport, at airport
+              with difficult approach, at airport with mountains around, at the biggest or bussiest or even the most beautiful airport in real world.
+            </p>
+            <p class="lead">We also offer you:</p>
+          </div>
+        </div>
+        <div class="row justify-content-center text-center">
+          <div class="col-md-5 mb-3">
+            <i class="bi bi-globe2" style="font-size: 6rem"></i>
+            <p class="fs-3 fw-bolder">REALISM</p>
+            <p class="lead">We try to offer an experience that closely by having the same routes and aircraft with the real AirAsia Airlines.</p>
+          </div>
+          <div class="col-md-5 mb-3">
+            <i class="bi bi-people-fill" style="font-size: 6rem"></i>
+            <p class="fs-3 fw-bolder">FRIENDLY</p>
+            <p class="lead">We try to offer a friendly community that you’ll feel right at home.</p>
+          </div>
         </div>
       </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,128L48,138.7C96,149,192,171,288,186.7C384,203,480,213,576,186.7C672,160,768,96,864,101.3C960,107,1056,181,1152,192C1248,203,1344,149,1392,122.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
     </section>
-    <!-- End WhyUs -->
+    <!-- End Why Us -->
 
     <!-- Statistics -->
-
-    <section class="flex py-5" id="stats">
-      <div class="row flex text-center px-5">
-        <h2 class="display-5 fw-bold lh-1 mb-3">Our Statistics</h2>
-      </div>
-      <div class="row flex justify-content-center px-5 text-white">
-        <div class="col-lg-3 text-center p-5">
-          <div class="card shadow">
-            <div class="card-body" style="background-color: #ff0000">
-              <i class="bi bi-person-badge" style="font-size: 4rem"></i>
-              <h2 class="fs-1 fw-bold">40</h2>
-              <h5 class="fw-bold fs-5">Pilots</h5>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 text-center p-5">
-          <div class="card shadow">
-            <div class="card-body" style="background-color: #ff0000">
-              <i class="bi bi-globe2" style="font-size: 4rem"></i>
-              <h2 class="fs-1 fw-bold">5121</h2>
-              <h5 class="fw-bold fs-5">Routes</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 text-center p-5">
-          <div class="card shadow">
-            <div class="card-body" style="background-color: #ff0000">
-              <i class="bi bi-journal-check" style="font-size: 4rem"></i>
-              <h2 class="fs-1 fw-bold">1287</h2>
-              <h5 class="fw-bold fs-5">Flight Logged</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 text-center p-5">
-          <div class="card shadow">
-            <div class="card-body" style="background-color: #ff0000">
-              <i class="bi bi-clock-history" style="font-size: 4rem"></i>
-              <h2 class="fs-1 fw-bold">1998</h2>
-              <h5 class="fw-bold fs-5">Flight Hours</h5>
-            </div>
-          </div>
+    <section id="stat">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col">
+          <h2 class="display-5 fw-bold lh-1 mb-5">Our Statistics</h2>
         </div>
       </div>
+        <div class="row justify-content-between text-white">
+          <div class="col-lg-3 text-center mb-5">
+            <div class="card shadow">
+              <div class="card-body" style="background-color: #ff0000">
+                <i class="bi bi-person-badge" style="font-size: 4rem"></i>
+                <h2 class="fs-1 fw-bold">40</h2>
+                <h5 class="fw-bold fs-5">Pilots</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 text-center mb-5">
+            <div class="card shadow">
+              <div class="card-body" style="background-color: #ff0000">
+                <i class="bi bi-globe2" style="font-size: 4rem"></i>
+                <h2 class="fs-1 fw-bold">5121</h2>
+                <h5 class="fw-bold fs-5">Routes</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 text-center mb-5">
+            <div class="card shadow">
+              <div class="card-body" style="background-color: #ff0000">
+                <i class="bi bi-journal-check" style="font-size: 4rem"></i>
+                <h2 class="fs-1 fw-bold">1287</h2>
+                <h5 class="fw-bold fs-5">Flight Logged</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 text-center mb-5">
+            <div class="card shadow">
+              <div class="card-body" style="background-color: #ff0000">
+                <i class="bi bi-clock-history" style="font-size: 4rem"></i>
+                <h2 class="fs-1 fw-bold">1998</h2>
+                <h5 class="fw-bold fs-5">Flight Hours</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ff0000" fill-opacity="1" d="M0,96L48,101.3C96,107,192,117,288,112C384,107,480,85,576,90.7C672,96,768,128,864,122.7C960,117,1056,75,1152,53.3C1248,32,1344,32,1392,32L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
     </section>
-
     <!-- End Statistics -->
 
-    <!-- Routes -->
-    <section class="flex p-5" id="routes">
-      <div class="row flex text-center px-5">
-        <h2 class="display-5 fw-bold lh-1 mb-5">Our Routes</h2>
+    <!-- Fleet -->
+    <section id="fleet" style="background-color: #ff0000;">
+        <div class="container">
+          <div class="row text-center text-white">
+            <div class="col">
+              <h2 class="display-5 fw-bold lh-1 mb-5">Our Fleet</h2>
+            </div>
+          </div>
+        </div>
+      <div class="row justify-content-center px-5">
+        <div class="col-md-5 mb-5">
+          <div class="card">
+            <img src="img/a320.jpeg" class="card-img-top img-thumbnail" alt="A320" />
+            <div class="card-body">
+              <h5 class="card-title">Airbus A320</h5>
+              <p class="card-text">Number of aircraft in fleet: 229.</p>
+              <a href="#" class="btn btn-primary">Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 mb-5">
+          <div class="card">
+            <img src="img/a320.jpeg" class="card-img-top img-thumbnail" alt="A320" />
+            <div class="card-body">
+              <h5 class="card-title">Airbus A320</h5>
+              <p class="card-text">Number of aircraft in fleet: 229.</p>
+              <a href="#" class="btn btn-primary">Details</a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="card border-danger text-center">
-        <div class="card-header" style="background-color: #ff0000;">
-          <nav>
-            <div class="nav nav-pills justify-content-center" id="nav-tab" role="tablist">
-              <button class="nav-link text-white active" id="nav-airasia-tab" data-bs-toggle="tab" data-bs-target="#nav-airasia" type="button" role="tab" aria-controls="nav-airasia" aria-selected="true">AirAsia (AK/AXM)</button>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,224L48,234.7C96,245,192,267,288,240C384,213,480,139,576,133.3C672,128,768,192,864,208C960,224,1056,192,1152,181.3C1248,171,1344,181,1392,186.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </section>
+    <!-- End Fleet -->
+
+    <!-- Route -->
+    <section id="route">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col">
+            <h2 class="display-5 fw-bold lh-1 mb-5">Our Route</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <div class="card text-center">
+              <div class="nav nav-pills justify-content-center  p-3" style="background-color: #ff0000;" id="nav-tab" role="tablist">
+                <button class="nav-link text-white active" id="nav-airasia-tab" data-bs-toggle="tab" data-bs-target="#nav-airasia" type="button" role="tab" aria-controls="nav-airasia" aria-selected="true">AirAsia (AK/AXM)</button>
               <button class="nav-link text-white" id="nav-indo-tab" data-bs-toggle="tab" data-bs-target="#nav-indo" type="button" role="tab" aria-controls="nav-indo" aria-selected="false">AirAsia Indonesia (QZ/AWQ)</button>
               <button class="nav-link text-white" id="nav-thai-tab" data-bs-toggle="tab" data-bs-target="#nav-thai" type="button" role="tab" aria-controls="nav-thai" aria-selected="false">Thai AirAsia</button>
               <button class="nav-link text-white" id="nav-india-tab" data-bs-toggle="tab" data-bs-target="#nav-india" type="button" role="tab" aria-controls="nav-india" aria-selected="false">AirAsia India</button>
@@ -174,39 +233,616 @@
               <button class="nav-link text-white" id="nav-delivery-tab" data-bs-toggle="tab" data-bs-target="#nav-delivery" type="button" role="tab" aria-controls="nav-delivery" aria-selected="false">Delivery Route</button>
               <button class="nav-link text-white" id="nav-codeshare-tab" data-bs-toggle="tab" data-bs-target="#nav-codeshare" type="button" role="tab" aria-controls="nav-codeshare" aria-selected="false">Codeshare Route</button>
               <button class="nav-link text-white" id="nav-historic-tab" data-bs-toggle="tab" data-bs-target="#nav-historic" type="button" role="tab" aria-controls="nav-historic" aria-selected="false">Historic Route</button>
-            </div>
-          </nav>
-        </div>
-          <div class="card-body">
-            <div class="tab-content" id="nav-tabContent">
-              <div class="tab-pane fade show active" id="nav-airasia" role="tabpanel" aria-labelledby="nav-airasia-tab"><h5>A total of 248 Routes from WMKK (Kuala Lumpur International Airport)</h5>
-                <img src="img/airasia1.png" class="img-fluid"alt="">
               </div>
-              <div class="tab-pane fade" id="nav-indo" role="tabpanel" aria-labelledby="nav-indo-tab">Indonesia</div>
-              <div class="tab-pane fade" id="nav-thai" role="tabpanel" aria-labelledby="nav-thai-tab">Thai</div>
-              <div class="tab-pane fade" id="nav-india" role="tabpanel" aria-labelledby="nav-india-tab">India</div>
-              <div class="tab-pane fade" id="nav-philipines" role="tabpanel" aria-labelledby="nav-philipines-tab">Philipines</div>
-              <div class="tab-pane fade" id="nav-japan" role="tabpanel" aria-labelledby="nav-japan-tab">Japan</div>
-              <div class="tab-pane fade" id="nav-airasiax" role="tabpanel" aria-labelledby="nav-airasiax-tab">Airasiax</div>
-              <div class="tab-pane fade" id="nav-thaix" role="tabpanel" aria-labelledby="nav-thaix-tab">Thai X</div>
-              <div class="tab-pane fade" id="nav-indox" role="tabpanel" aria-labelledby="nav-indox-tab">Indo X</div>
-              <div class="tab-pane fade" id="nav-charter" role="tabpanel" aria-labelledby="nav-charter-tab">Charter</div>
-              <div class="tab-pane fade" id="nav-delivery" role="tabpanel" aria-labelledby="nav-delivery-tab">Delivery</div>
-              <div class="tab-pane fade" id="nav-codeshare" role="tabpanel" aria-labelledby="nav-codeshare-tab">Codeshare</div>
-              <div class="tab-pane fade" id="nav-historic" role="tabpanel" aria-labelledby="nav-historic-tab">Historic</div>
-            </div>
-            </div>
+            
+            <div class="card-body">
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-airasia" role="tabpanel" aria-labelledby="nav-airasia-tab">
+                  <div class="table-responsive">
+                    <table class="table table-bordered table-sm align-middle table-hover">
+                      <thead class="table-dark">
+                        <tr>
+                          <th scope="col">Departure</th>
+                          <th scope="col">Arrival</th>
+                          <th scope="col">Flight Time</th>
+                          <th scope="col">Flight Type</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Alor Setar (WMKA/AOR)</td>
+                          <td>Kuala Lumpur (WMKK/KUL)</td>
+                          <td>1:10</td>
+                          <td>Regional - Indonesia</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="nav-indo" role="tabpanel" aria-labelledby="nav-indo-tab">
+                  <div class="table-responsive">
+                    <table class="table table-bordered table-sm align-middle table-hover">
+                      
+                      <thead class="table-dark">
+                        <tr>
+                          <th scope="col">Departure</th>
+                          <th scope="col">Arrival</th>
+                          <th scope="col">Flight Time</th>
+                          <th scope="col">Flight Type</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Alor Setar (WMKA/AOR)</td>
+                          <td>Kuala Lumpur (WMKK/KUL)</td>
+                          <td>1:10</td>
+                          <td>Regional - Indonesia</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="nav-thai" role="tabpanel" aria-labelledby="nav-thai-tab">
+                  <div class="table-responsive">
+                    <table class="table table-bordered table-sm align-middle table-hover">
+                      <thead class="table-dark">
+                        <tr>
+                          <th scope="col">Departure</th>
+                          <th scope="col">Arrival</th>
+                          <th scope="col">Flight Time</th>
+                          <th scope="col">Flight Type</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Alor Setar (WMKA/AOR)</td>
+                          <td>Kuala Lumpur (WMKK/KUL)</td>
+                          <td>1:10</td>
+                          <td>Regional - Indonesia</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="nav-india" role="tabpanel" aria-labelledby="nav-india-tab">
+                  <div class="table-responsive">
+                    <table class="table table-bordered table-sm align-middle table-hover">
+                      <thead class="table-dark">
+                        <tr>
+                          <th scope="col">Departure</th>
+                          <th scope="col">Arrival</th>
+                          <th scope="col">Flight Time</th>
+                          <th scope="col">Flight Type</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Alor Setar (WMKA/AOR)</td>
+                          <td>Kuala Lumpur (WMKK/KUL)</td>
+                          <td>1:10</td>
+                          <td>Regional - Indonesia</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="nav-philipines" role="tabpanel" aria-labelledby="nav-philipines-tab">
+                  <div class="table-responsive">
+                    <table class="table table-bordered table-sm align-middle table-hover">
+                      <thead class="table-dark">
+                        <tr>
+                          <th scope="col">Departure</th>
+                          <th scope="col">Arrival</th>
+                          <th scope="col">Flight Time</th>
+                          <th scope="col">Flight Type</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Alor Setar (WMKA/AOR)</td>
+                          <td>Kuala Lumpur (WMKK/KUL)</td>
+                          <td>1:10</td>
+                          <td>Regional - Indonesia</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="nav-japan" role="tabpanel" aria-labelledby="nav-japan-tab">
+                  <div class="table-responsive">
+                    <table class="table table-bordered table-sm align-middle table-hover">
+                      <thead class="table-dark">
+                        <tr>
+                          <th scope="col">Departure</th>
+                          <th scope="col">Arrival</th>
+                          <th scope="col">Flight Time</th>
+                          <th scope="col">Flight Type</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Alor Setar (WMKA/AOR)</td>
+                          <td>Kuala Lumpur (WMKK/KUL)</td>
+                          <td>1:10</td>
+                          <td>Regional - Indonesia</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="nav-airasiax" role="tabpanel" aria-labelledby="nav-airasiax-tab">
+                  <div class="table-responsive">
+                    <table class="table table-bordered table-sm align-middle table-hover">
+                      <thead class="table-dark">
+                        <tr>
+                          <th scope="col">Departure</th>
+                          <th scope="col">Arrival</th>
+                          <th scope="col">Flight Time</th>
+                          <th scope="col">Flight Type</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Alor Setar (WMKA/AOR)</td>
+                          <td>Kuala Lumpur (WMKK/KUL)</td>
+                          <td>1:10</td>
+                          <td>Regional - Indonesia</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="nav-thaix" role="tabpanel" aria-labelledby="nav-thaix-tab">
+                  <div class="table-responsive">
+                    <table class="table table-bordered table-sm align-middle table-hover">
+                      <thead class="table-dark">
+                        <tr>
+                          <th scope="col">Departure</th>
+                          <th scope="col">Arrival</th>
+                          <th scope="col">Flight Time</th>
+                          <th scope="col">Flight Type</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Alor Setar (WMKA/AOR)</td>
+                          <td>Kuala Lumpur (WMKK/KUL)</td>
+                          <td>1:10</td>
+                          <td>Regional - Indonesia</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="nav-indox" role="tabpanel" aria-labelledby="nav-indox-tab">
+                  <div class="table-responsive">
+                    <table class="table table-bordered table-sm align-middle table-hover">
+                      <thead class="table-dark">
+                        <tr>
+                          <th scope="col">Departure</th>
+                          <th scope="col">Arrival</th>
+                          <th scope="col">Flight Time</th>
+                          <th scope="col">Flight Type</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Alor Setar (WMKA/AOR)</td>
+                          <td>Kuala Lumpur (WMKK/KUL)</td>
+                          <td>1:10</td>
+                          <td>Regional - Indonesia</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="nav-charter" role="tabpanel" aria-labelledby="nav-charter-tab">
+                  <div class="table-responsive">
+                    <table class="table table-bordered table-sm align-middle table-hover">
+                      <thead class="table-dark">
+                        <tr>
+                          <th scope="col">Departure</th>
+                          <th scope="col">Arrival</th>
+                          <th scope="col">Flight Time</th>
+                          <th scope="col">Flight Type</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Alor Setar (WMKA/AOR)</td>
+                          <td>Kuala Lumpur (WMKK/KUL)</td>
+                          <td>1:10</td>
+                          <td>Regional - Indonesia</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="nav-delivery" role="tabpanel" aria-labelledby="nav-delivery-tab">
+                  <div class="table-responsive">
+                    <table class="table table-bordered table-sm align-middle table-hover">
+                      <thead class="table-dark">
+                        <tr>
+                          <th scope="col">Departure</th>
+                          <th scope="col">Arrival</th>
+                          <th scope="col">Flight Time</th>
+                          <th scope="col">Flight Type</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Alor Setar (WMKA/AOR)</td>
+                          <td>Kuala Lumpur (WMKK/KUL)</td>
+                          <td>1:10</td>
+                          <td>Regional - Indonesia</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="nav-codeshare" role="tabpanel" aria-labelledby="nav-codeshare-tab">
+                 <p>Air Asia Virtual has so far had a relationship Codeshare with 4 VA in this world, while 4 VA Such:</p>
+            
+            <p><strong>1. Lion Group Virtual Airlines (LGVA)</strong></p>
+            
+            <p><img alt="" src="./vam/images/codeshare/LGVA.jpeg" /><img alt="LGVA" src="https://pirep.airasiavirtualif.com/vam/images/codeshare/LGVA.jpeg" style="height:200px; width:200px" /></p>
+            
+            <p>LGVA is a Virtual Airlines originating from Indonesia, which has Primary HUB in Jakarta (WIII), Kuala Lumpur (WMKK), and Bangkok (VTBD). currently has a Boeing 737-900ER Fleet, and an Airbus A320-200. LGVA Has IATA Code <strong>&quot;JT/ID&quot;</strong> In route database</p>
+            
+            <p><strong>2. Qatar Airways Virtual (QRV)</strong></p>
+            
+            <p><strong><img alt="QRV" src="https://pirep.airasiavirtualif.com/vam/images/codeshare/QRV.png" style="height:200px; width:200px" /></strong></p>
+            
+            <p>LGVA Is a Virtual Airlines originating from Qatar, which has a Primary HUB at Doha International Airport (OTHH). currently has Fleet Airbus A321-200, Airbus A350-900, Boeing 777-200/300ER, and Boeing 787-8. QRV Has IATA Code <strong>&quot;QR&quot;</strong> In route database.</p>
+            
+            <p><strong>3. Indigo Airlines Virtual (EVA)</strong></p>
+            
+            <p><strong><img alt="EVA" src="https://pirep.airasiavirtualif.com/vam/images/codeshare/EVA.png" style="height:83px; width:200px" /></strong></p>
+            
+            <p>EVA is a Virtual Airlines originating from India, which has a Primary HUB in Indira Gandhi International Airport (VIDP). currently has the Airbus A320-200 Fleet. EVA Has IATA Code <strong>&quot;6E&quot;</strong> in route database.</p>
+            
+            <p><strong>4. China Airlines Virtual (CIVA)</strong></p>
+            
+            <p><strong><img alt="CIVA" src="https://pirep.airasiavirtualif.com/vam/images/codeshare/CIVA.png" style="height:28px; width:300px" /></strong></p>
+            
+            <p>CIVA is a Virtual Airlines originating from Taiwan, which has a Primary HUB at Taipei International Airport (RCTP). currently has Fleet Airbus A350-900, Boeing 777-200/300ER. CIVA Has IATA Code <strong>&quot;CI&quot;</strong> in the route database.</p>
+          
+                </div>
+                <div class="tab-pane fade" id="nav-historic" role="tabpanel" aria-labelledby="nav-historic-tab">
+                  <div class="table-responsive">
+                    <table class="table table-bordered table-sm align-middle table-hover">
+                      <thead class="table-dark">
+                        <tr>
+                          <th scope="col">Departure</th>
+                          <th scope="col">Arrival</th>
+                          <th scope="col">Flight Time</th>
+                          <th scope="col">Flight Type</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Alor Setar (WMKA/AOR)</td>
+                          <td>Kuala Lumpur (WMKK/KUL)</td>
+                          <td>1:10</td>
+                          <td>Regional - Indonesia</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+          </div>
+    </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ff0000" fill-opacity="1" d="M0,32L48,48C96,64,192,96,288,112C384,128,480,128,576,128C672,128,768,128,864,144C960,160,1056,192,1152,181.3C1248,171,1344,117,1392,90.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </section>
+    <!-- End Route -->
+
+    <!-- Event -->
+    <section id="event" style="background-color: #ff0000;">
+      <div class="container">
+        <div class="row text-center text-white">
+          <div class="col">
+            <h2 class="display-5 fw-bold lh-1 mb-5">Our Latest Event</h2>
           </div>
         </div>
       </div>
+    <div class="row justify-content-center">     
+        <div class="col mb-5">
+          <div class="card">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                  <img src="https://pirep.airasiavirtualif.com/vam/images/slider/1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                  <img src="https://pirep.airasiavirtualif.com/vam/images/slider/2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                  <img src="https://pirep.airasiavirtualif.com/vam/images/slider/3.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>     
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,224L48,208C96,192,192,160,288,160C384,160,480,192,576,202.7C672,213,768,203,864,218.7C960,235,1056,277,1152,282.7C1248,288,1344,256,1392,240L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+  </section>
+    <!-- End Event -->
+
+    <!-- Team -->
+    <section id="team">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col">
+          <h2 class="display-5 fw-bold lh-1 mb-5">Our Team</h2>
+        </div>
+      </div>
+        <div class="row justify-content-center">
+          <div class="col text-center mb-5">
+            <div class="card shadow">
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Chief Executive Officer 
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body"><p class="fw-bold">AVA001 - Nathanael Phang</p>
+                    <p> Location: Denpasar Bali, Indonesia </p>
+                    <p>IFC Username: <a href="https://community.infiniteflight.com/u/nathanael_phang/summary"> Nathanael_Phang</a></p>
+                  </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Chief Operating Officier
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum deleniti reprehenderit laborum impedit dolores odit voluptatem nobis sed laboriosam quia.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      Human Resource Manager
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, perspiciatis laborum modi accusamus iure necessitatibus.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                      IT Manager
+                    </button>
+                  </h2>
+                  <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, dicta.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                      Flight Manager
+                    </button>
+                  </h2>
+                  <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos inventore quam mollitia ipsum hic, repellendus quia saepe soluta exercitationem similique alias in dolores dolore consequatur rerum, laboriosam repellat temporibus distinctio.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                      Event Manager
+                    </button>
+                  </h2>
+                  <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa eligendi, dolor possimus necessitatibus voluptatibus nam ratione qui reprehenderit dolores molestias voluptatum nisi.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingSeven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                      Media Manager
+                    </button>
+                  </h2>
+                  <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sunt voluptas alias impedit ipsa, quod iste accusamus nihil saepe maxime ullam quisquam repudiandae ex!</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingEight">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                      Flight Instructor
+                    </button>
+                  </h2>
+                  <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingNine">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+                      Senior Advisor
+                    </button>
+                  </h2>
+                  <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi doloribus odio ipsum officia, obcaecati aspernatur autem./div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ff0000" fill-opacity="1" d="M0,96L48,101.3C96,107,192,117,288,112C384,107,480,85,576,90.7C672,96,768,128,864,122.7C960,117,1056,75,1152,53.3C1248,32,1344,32,1392,32L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
     </section>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path
-        fill="#ff0000"
-        fill-opacity="1"
-        d="M0,96L30,90.7C60,85,120,75,180,90.7C240,107,300,149,360,186.7C420,224,480,256,540,250.7C600,245,660,203,720,181.3C780,160,840,160,900,170.7C960,181,1020,203,1080,208C1140,213,1200,203,1260,181.3C1320,160,1380,128,1410,112L1440,96L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
-      ></path>
-    </svg>
-    <!-- End Routes -->
+    <!-- End Team -->
+
+    <!-- Policies -->
+    <section id="policies" style="background-color: #ff0000;">
+      <div class="container">
+        <div class="row text-center text-white">
+          <div class="col">
+            <h2 class="display-5 fw-bold lh-1 mb-5">Our Policies</h2>
+          </div>
+        </div>
+      </div>
+    <div class="row justify-content-center px-5">
+      <div class="col-md-4 mb-5 text-center">
+        <div class="card shadow px-5">
+        <i class="bi bi-hand-thumbs-up" style="font-size: 6rem; color:#ff0000"></i>
+            <p class="fs-3 fw-bolder">Respect</p>
+            <p class="fs-6">When flying please respect others Pilot, be professional and realistic. Because you are not as you but you as AirAsia Virtual Airlines Family.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-5 text-center">
+        <div class="card shadow px-5">
+          <i class="bi bi-check-circle" style="font-size: 6rem; color:#ff0000"></i>
+            <p class="fs-3 fw-bolder">Active</p>
+            <p class="fs-6">Must be 13 years old and have IFC profile, have an active and valid Pro Subscription, Grade 2 or Higher (Access to Training Server or Higher).</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-5 text-center">
+        <div class="card shadow px-5">
+        <i class="bi bi-card-checklist" style="font-size: 6rem; color:#ff0000"></i>
+            <p class="fs-3 fw-bolder">Test Flight</p>
+            <p class="fs-6">You are required to do a pattern flight as a test. You will be contacted by us after joining.
+              This needs to be completed within 7 days, but you may fly and log flight in the meantime.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-5 text-center">
+        <div class="card shadow px-5">
+        <i class="bi bi-chat-quote" style="font-size: 6rem; color:#ff0000"></i>
+            <p class="fs-3 fw-bolder">Communication</p>
+            <p class="fs-6">Maintain an active presence on Discord to make communication better with other AirAsia Virtual Airlines Pilots.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-5 text-center">
+        <div class="card shadow px-5">
+        <i class="bi bi-briefcase" style="font-size: 6rem; color:#ff0000"></i>
+            <p class="fs-3 fw-bolder">Pirep & Event</p>
+            <p class="fs-6">At least once per Month you must fill PIREP (Pilot Report) or Joining Event. Fly only at Training or Expert Server.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-5 text-center">
+        <div class="card shadow px-5">
+        <i class="bi bi-emoji-sunglasses" style="font-size: 6rem; color:#ff0000"></i>
+            <p class="fs-3 fw-bolder">Loyalty</p>
+            <p class="fs-6">Show your commitment with be active person and support our community.</p>
+        </div>
+      </div>
+      </div>
+      
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,224L48,234.7C96,245,192,267,288,240C384,213,480,139,576,133.3C672,128,768,192,864,208C960,224,1056,192,1152,181.3C1248,171,1344,181,1392,186.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+  </section>
+    <!-- End Policies -->
+
+    <!-- Rank -->
+    <section id="rank">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col">
+          <h2 class="display-5 fw-bold lh-1 mb-5">Rank System</h2>
+        </div>
+      </div>
+        <div class="row justify-content-between">
+          <div class="col-4 col-md-2 text-center mb-5">
+            <div class="card shadow">
+              <div class="card-header" style="background-color: white;">
+              <img src="https://airasiavirtualif.com/wp-content/uploads/2019/09/rTrainee.jpg" class="card-img-top"></div>
+              <div class="card-body">
+                <h5 class="card-title">Trainee</h5>
+                <p class="card-text">Hours Required :<br> 0 to 20</p>
+                <p class="card-text">Aircraft :<br>A320</p>                
+              </div>
+            </div>
+          </div>
+          <div class="col-4 col-md-2 text-center mb-5">
+            <div class="card shadow">
+              <div class="card-header" style="background-color: white;">
+              <img src="https://airasiavirtualif.com/wp-content/uploads/2019/09/rTO.jpg" class="card-img-top"></div>
+              <div class="card-body">
+                <h5 class="card-title">Third Officer</h5>
+                <p class="card-text">Hours Required :<br> 0 to 20</p>
+                <p class="card-text">Aircraft :<br>A320</p>                
+              </div>
+            </div>
+          </div>
+          <div class="col-4 col-md-2 text-center mb-5">
+            <div class="card shadow">
+              <div class="card-header" style="background-color: white;">
+              <img src="https://airasiavirtualif.com/wp-content/uploads/2019/09/rSO.jpg" class="card-img-top"></div>
+              <div class="card-body">
+                <h5 class="card-title">Second Officer</h5>
+                <p class="card-text">Hours Required :<br> 0 to 20</p>
+                <p class="card-text">Aircraft :<br>A320</p>                
+              </div>
+            </div>
+          </div>
+          <div class="col-4 col-md-2 text-center mb-5">
+            <div class="card shadow">
+              <div class="card-header" style="background-color: white;">
+              <img src="https://airasiavirtualif.com/wp-content/uploads/2019/09/rFO.jpg" class="card-img-top"></div>
+              <div class="card-body">
+                <h5 class="card-title">First Officer</h5>
+                <p class="card-text">Hours Required :<br> 0 to 20</p>
+                <p class="card-text">Aircraft :<br>A320</p>                
+              </div>
+            </div>
+          </div>
+          <div class="col-4 col-md-2 text-center mb-5">
+            <div class="card shadow">
+              <div class="card-header" style="background-color: white;">
+              <img src="https://airasiavirtualif.com/wp-content/uploads/2019/09/rCaptain.jpg" class="card-img-top"></div>
+              <div class="card-body">
+                <h5 class="card-title">Captain</h5>
+                <p class="card-text">Hours Required :<br> 0 to 20</p>
+                <p class="card-text">Aircraft :<br>A320</p>                
+              </div>
+            </div>
+          </div>
+          <div class="col-4 col-md-2 text-center mb-5">
+            <div class="card shadow">
+              <div class="card-header" style="background-color: white;">
+              <img src="https://airasiavirtualif.com/wp-content/uploads/2019/09/rNewSrCaptain.jpg" class="card-img-top"></div>
+              <div class="card-body">
+                <h5 class="card-title">Senior Captain</h5>
+                <p class="card-text">Hours Required :<br> 0 to 20</p>
+                <p class="card-text">Aircraft :<br>A320</p>                
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ff0000" fill-opacity="1" d="M0,96L48,101.3C96,107,192,117,288,112C384,107,480,85,576,90.7C672,96,768,128,864,122.7C960,117,1056,75,1152,53.3C1248,32,1344,32,1392,32L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </section>
+    <!-- End Rank -->
+
+    <!-- Footer -->
+    <footer class="text-center text-white pb-3" style="background-color: #ff0000;">
+      AirAsia Virtual Airlines is in no way related to the real-world AirAsia Airlines Co.<br>Please visit <a style="text-decoration: none" href="https://airasia.com"><strong class="text-white">AirAsia.com</strong></a> for information on their company and for real-world flight booking. <br>All trademarks and logos remain property of their respective owners.
+<p>
+<strong>Copyright © 2019 | AirAsia Virtual Airlines</strong></p>
+    </footer>
+    <!-- End Footer -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
   </body>
 </html>
