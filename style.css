@@ -1,0 +1,220 @@
+/* Navbar */
+
+.navbar-brand {
+  font-family: "Viga";
+  font-size: 32px;
+}
+
+/* Utility */
+.tombol {
+  text-transform: uppercase;
+  border-radius: 40px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+/* Hero */
+.hero {
+  background-image: url(img/bg-image.jpg);
+  background-size: cover;
+  height: 640px;
+}
+.hero h1 {
+  font-family: "Viga";
+  font-size: 40px;
+  text-align: center;
+}
+
+.hero img {
+  justify-content: center;
+  margin: auto;
+  display: block;
+}
+
+/* Stats */
+.stats {
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  margin-top: -100px;
+  background-color: white;
+  padding: 30px;
+}
+
+.stats img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.stats h1 {
+  font-family: "Viga";
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.stats h2 {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Why Us */
+.whyus {
+  margin-top: 50px;
+}
+
+.whyus h3 {
+  font-family: "Viga";
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.whyus h4 {
+  font-family: "Viga";
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.whyus-img {
+  border-radius: 20px;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+  margin-top: 80px;
+}
+
+.whyus-img-item {
+  width: 100px;
+  height: 100px;
+}
+
+/* Rank */
+/* Stats */
+.ranks {
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  margin-top: 40px;
+  background-color: white;
+  padding: 30px;
+}
+
+.ranks img {
+  width: 100px;
+  height: auto;
+  margin: auto;
+  display: block;
+}
+
+.ranks h1 {
+  font-family: "Viga";
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.ranks h2 {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Desktop Version */
+@media (min-width: 992px) {
+  .navbar-brand,
+  .nav-link {
+    color: white !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  }
+
+  .nav-link {
+    text-transform: uppercase;
+    margin-right: 10px;
+  }
+
+  .nav-link:hover::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid #fff;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+
+  .hero {
+    margin-top: -10px;
+  }
+  .hero h1 {
+    font-family: "Viga";
+    font-size: 50px;
+    text-align: start;
+  }
+  .whyus h3 {
+    font-family: "Viga";
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: start;
+  }
+}
+
+@media (max-width: 668px) {
+  .navbar {
+    background-color: rgba(255, 0, 0, 0.9) !important;
+  }
+  .navbar-brand,
+  .nav-link {
+    color: white !important;
+    text-align: center;
+  }
+  .nav-link:hover {
+    background-color: black;
+  }
+  .navbar .btn {
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .stats {
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    margin-top: -20px;
+    background-color: white;
+    padding: 30px;
+  }
+
+  .ranks {
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    margin-top: 40px;
+    background-color: white;
+    padding: 50px;
+    align-items: baseline;
+  }
+  .tombol {
+    border-radius: 40px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  .ranks p {
+    font-size: 14px;
+  }
+
+  .whyus p {
+    font-size: 14px;
+    padding: 20px;
+    text-align: justify;
+  }
+  .hero img {
+    justify-content: center;
+    margin: auto;
+    display: block;
+    margin-left: 30px;
+  }
+
+  .hero p {
+    text-align: center;
+  }
+}
