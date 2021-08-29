@@ -13,7 +13,6 @@
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet" />
-
     <title>AirAsia Virtual Airlines</title>
   </head>
   <body>
@@ -30,22 +29,22 @@
               <a class="nav-link scrollto active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Fleet</a>
+              <a class="nav-link" href="#rank">Rank</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Route</a>
+              <a class="nav-link" href="#fleet">Fleet</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Event</a>
+              <a class="nav-link" href="#route">Route</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Rank</a>
+              <a class="nav-link" href="#event">Event</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Team</a>
+              <a class="nav-link" href="#team">Team</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Policies</a>
+              <a class="nav-link" href="#policies">Policies</a>
             </li>
             <li class="nav-item">
               <a class="btn btn-warning tombol" href="#">Login</a>
@@ -62,7 +61,7 @@
     <!-- Hero -->
     <div class="hero">
       <div class="container col-xxl-8 px-4 py-5">
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="row flex-lg-row-reverse align-items-center py-5">
           <div class="col-10 col-sm-8 col-lg-6">
             <div data-aos="fade-up" data-aos-duration="1000">
               <img src="img/LogoAVA2.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy" />
@@ -78,128 +77,827 @@
       </div>
     </div>
     <!-- End Hero -->
-
     <!-- Container -->
-    <div class="container">
+    <div class="container justify-content-center">
       <!-- Statistics -->
-      <div data-aos="fade-up">
+      <section id="stats">
         <div class="row justify-content-center">
-          <div class="col-10 col-lg-10 stats">
+          <div class="col-8 col-lg-10 stats">
             <div class="row">
               <h1>Statistics</h1>
-              <div class="col col-lg">
-                <img src="img/pilots.svg" alt="pilots" class="float-start" />
+              <div class="col col-lg justify-content-center text-center">
+                <img src="img/pilots.svg" alt="pilots" />
                 <h2>50</h2>
                 <p>Pilots</p>
               </div>
-              <div class="col col-lg">
-                <img src="img/routes.svg" alt="pilots" class="float-start" />
+              <div class="col col-lg justify-content-center text-center">
+                <img src="img/routes.svg" alt="pilots" />
                 <h2>50</h2>
                 <p>Routes</p>
               </div>
-              <div class="col col-lg">
-                <img src="img/logged.svg" alt="pilots" class="float-start" />
+              <div class="col col-lg justify-content-center text-center">
+                <img src="img/logged.svg" alt="pilots" />
                 <h2>50</h2>
                 <p>Flight Logged</p>
               </div>
-              <div class="col col-lg">
-                <img src="img/hours.svg" alt="pilots" class="float-start" />
+              <div class="col col-lg justify-content-center text-center">
+                <img src="img/hours.svg" alt="pilots" />
                 <h2>50</h2>
                 <p>Flight Hours</p>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <!-- End Statistics -->
       <!-- why Us -->
-      <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-        <div class="row whyus">
+      <section id="whyus">
+        <div class="row whyus align-items-center">
           <div class="col-lg-6">
-            <img src="img/a320.jpeg" alt="a320" class="whyus-img img-fluid" />
+            <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+              <img src="img/a320.jpeg" alt="a320" class="whyus-img img-fluid" />
+            </div>
           </div>
           <div class="col-lg-6">
-            <h3><span>Why </span>we are <span>Different?</span></h3>
-            <p>
-              AirAsia VA gives you quite a variety of flight routes in many countries in Asia. You will enjoy and experience unforgettable scenery when you fly some of our routes. Such as land the plane at the shortest airport, at airport
-              with difficult approach, at airport with mountains around, at the biggest or bussiest or even the most beautiful airport in real world.<br />We also offer you:
-            </p>
-            <div class="row text-center">
-              <div class="col">
-                <img src="img/realism.svg" alt="realism" class="whyus-img-item img-fluid" />
-                <h4>REALISM</h4>
-                <p>We try to offer an experience that closely by having the same routes and aircraft with the real AirAsia Airlines.</p>
-              </div>
-              <div class="col">
-                <img src="img/friendly.svg" alt="friendly" class="whyus-img-item img-fluid" />
-                <h4>FRIENDLY</h4>
-                <p>We try to offer a friendly community that you’ll feel right at home.</p>
+            <div data-aos="fade-left">
+              <h3><span>Why </span>we are <span>Different?</span></h3>
+              <p>
+                AirAsia VA gives you quite a variety of flight routes in many countries in Asia. You will enjoy and experience unforgettable scenery when you fly some of our routes. Such as land the plane at the shortest airport, at airport
+                with difficult approach, at airport with mountains around, at the biggest or bussiest or even the most beautiful airport in real world.<br />We also offer you:
+              </p>
+              <div class="row text-center">
+                <div class="col">
+                  <div data-aos="fade-up">
+                    <img src="img/realism.svg" alt="realism" class="whyus-img-item img-fluid" />
+                    <h4>REALISM</h4>
+                    <p>We try to offer an experience that closely by having the same routes and aircraft with the real AirAsia Airlines.</p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div data-aos="fade-up">
+                    <img src="img/friendly.svg" alt="friendly" class="whyus-img-item img-fluid" />
+                    <h4>FRIENDLY</h4>
+                    <p>We try to offer a friendly community that you’ll feel right at home.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <!-- End Why us -->
       <!-- Rank -->
-      <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-        <div class="row justify-content-center">
-          <div class="col-11 col-lg-10 p-5 ranks text-center">
-            <h1>Our Rank Systems</h1>
-            <div class="row">
-              <div class="col col-lg-4">
-                <img src="img/rTrainee.jpg" alt="Trainee" />
-                <h3>Trainee</h3>
-                <p>Hours Required : <br /><strong> 0 to 20 </strong><br />Aircraft : <br /><strong>A320</strong></p>
-              </div>
-              <div class="col col-lg-4">
-                <img src="img/rTO.jpg" alt="Third Officer" />
-                <h3>Third Officer</h3>
-                <p>Hours Required : <br /><strong> 21 to 50 </strong><br />Aircraft : <br /><strong>A320</strong></p>
-              </div>
-              <div class="col col-lg-4">
-                <img src="img/rSO.jpg" alt="Second Officer" />
-                <h3>Second Officer</h3>
-                <p>Hours Required : <br /><strong> 51 to 100 </strong><br />Aircraft : <br /><strong>A320</strong></p>
-              </div>
-              <div class="col col-lg-4">
-                <img src="img/rFO.jpg" alt="First Officer" />
-                <h3>First Officer</h3>
-                <p>Hours Required : <br /><strong> 101 to 200 </strong><br />Aircraft : <br /><strong>A320 and A333</strong></p>
-              </div>
-              <div class="col col-lg-4">
-                <img src="img/rCaptain.jpg" alt="Captain" />
-                <h3>Captain</h3>
-                <p>Hours Required : <br /><strong> 201 to 400 </strong><br />Aircraft : <br /><strong>A320 and A333</strong></p>
-              </div>
-              <div class="col col-lg-4">
-                <img src="img/rNewSrCaptain.jpg" alt="Senior Captain" />
-                <h3>Senior Captain</h3>
-                <p>Hours Required : <br /><strong> >400 </strong><br />Aircraft : <br /><strong>A320 and A333</strong></p>
+      <section id="rank">
+        <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+          <div class="row justify-content-center" id="rank">
+            <div class="col-10 col-lg-10 p-5 ranks text-center">
+              <h1>Our Rank Systems</h1>
+              <div class="row">
+                <div class="col col-lg-4">
+                  <img src="img/rTrainee.jpg" alt="Trainee" />
+                  <h3>Trainee</h3>
+                  <p>Hours Required : <br /><strong> 0 to 20 </strong><br />Aircraft : <br /><strong>A320</strong></p>
+                </div>
+                <div class="col col-lg-4">
+                  <img src="img/rTO.jpg" alt="Third Officer" />
+                  <h3>Third Officer</h3>
+                  <p>Hours Required : <br /><strong> 21 to 50 </strong><br />Aircraft : <br /><strong>A320</strong></p>
+                </div>
+                <div class="col col-lg-4">
+                  <img src="img/rSO.jpg" alt="Second Officer" />
+                  <h3>Second Officer</h3>
+                  <p>Hours Required : <br /><strong> 51 to 100 </strong><br />Aircraft : <br /><strong>A320</strong></p>
+                </div>
+                <div class="col col-lg-4">
+                  <img src="img/rFO.jpg" alt="First Officer" />
+                  <h3>First Officer</h3>
+                  <p>Hours Required : <br /><strong> 101 to 200 </strong><br />Aircraft : <br /><strong>A320 and A333</strong></p>
+                </div>
+                <div class="col col-lg-4">
+                  <img src="img/rCaptain.jpg" alt="Captain" />
+                  <h3>Captain</h3>
+                  <p>Hours Required : <br /><strong> 201 to 400 </strong><br />Aircraft : <br /><strong>A320 and A333</strong></p>
+                </div>
+                <div class="col col-lg-4">
+                  <img src="img/rNewSrCaptain.jpg" alt="Senior Captain" />
+                  <h3>Senior Captain</h3>
+                  <p>Hours Required : <br /><strong> >400 </strong><br />Aircraft : <br /><strong>A320 and A333</strong></p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <!-- End Rank -->
+      <!-- Fleet -->
+      <section id="fleet">
+        <div class="row fleet">
+          <div class="col">
+            <div class="row justify-content-center">
+              <h1>Our Fleet</h1>
+              <div class="row justify-content-center">
+                <div class="col-10 col-lg-5">
+                  <div data-aos="fade-up-right">
+                    <img src="img/a320.jpeg" alt="a320" class="img-fluid" />
+                  </div>
+                </div>
+                <div class="col-10 col-lg-5">
+                  <div data-aos="fade-up-left">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum voluptatibus nostrum sequi dolores ducimus, atque fugit ex non voluptatum. Consequatur?</p>
+                    <p><button type="button" class="btn btn-primary btn-sm tombol" data-bs-toggle="modal" data-bs-target="#a320Modal">Aircraft Specification</button></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-10 col-lg-5">
+                <div data-aos="fade-up-right">
+                  <img src="img/a330.jpg" alt="a330" class="img-fluid" />
+                </div>
+              </div>
+              <div class="col-10 col-lg-5">
+                <div data-aos="fade-up-left">
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum expedita excepturi maiores laborum earum. Saepe quasi eligendi tempore officia perferendis.</p>
+                  <p><button type="button" class="btn btn-primary btn-sm tombol" data-bs-toggle="modal" data-bs-target="#a330Modal">Aircraft Specification</button></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Fleet -->
+
+      <!-- Route -->
+      <section id="route">
+        <div class="row route">
+          <div class="col">
+            <div class="row justify-content-center">
+              <h1>Our Route</h1>
+              <div class="row justify-content-center">
+                <div class="col-md-11">
+                  <div data-aos="zoom-in" data-aos-duration="1000">
+                    <div class="card text-center">
+                      <div class="nav nav-pills justify-content-center p-2" style="background-color: #ff0000" id="nav-tab" role="tablist">
+                        <button class="nav-link text-white active" id="nav-airasia-tab" data-bs-toggle="tab" data-bs-target="#nav-airasia" type="button" role="tab" aria-controls="nav-airasia" aria-selected="true">AirAsia (AK/AXM)</button>
+                        <button class="nav-link text-white" id="nav-indo-tab" data-bs-toggle="tab" data-bs-target="#nav-indo" type="button" role="tab" aria-controls="nav-indo" aria-selected="false">AirAsia Indonesia (QZ/AWQ)</button>
+                        <button class="nav-link text-white" id="nav-thai-tab" data-bs-toggle="tab" data-bs-target="#nav-thai" type="button" role="tab" aria-controls="nav-thai" aria-selected="false">Thai AirAsia</button>
+                        <button class="nav-link text-white" id="nav-india-tab" data-bs-toggle="tab" data-bs-target="#nav-india" type="button" role="tab" aria-controls="nav-india" aria-selected="false">AirAsia India</button>
+                        <button class="nav-link text-white" id="nav-philipines-tab" data-bs-toggle="tab" data-bs-target="#nav-philipines" type="button" role="tab" aria-controls="nav-philipines" aria-selected="false">
+                          Philipines AirAsia
+                        </button>
+                        <button class="nav-link text-white" id="nav-japan-tab" data-bs-toggle="tab" data-bs-target="#nav-japan" type="button" role="tab" aria-controls="nav-japan" aria-selected="false">AirAsia Japan</button>
+                        <button class="nav-link text-white" id="nav-airasiax-tab" data-bs-toggle="tab" data-bs-target="#nav-airasiax" type="button" role="tab" aria-controls="nav-airasiax" aria-selected="false">AirAsia X</button>
+                        <button class="nav-link text-white" id="nav-thaix-tab" data-bs-toggle="tab" data-bs-target="#nav-thaix" type="button" role="tab" aria-controls="nav-thaix" aria-selected="false">Thai AirAsia X</button>
+                        <button class="nav-link text-white" id="nav-indox-tab" data-bs-toggle="tab" data-bs-target="#nav-indox" type="button" role="tab" aria-controls="nav-indox" aria-selected="false">Indonesia AirAsia X</button>
+                        <button class="nav-link text-white" id="nav-charter-tab" data-bs-toggle="tab" data-bs-target="#nav-charter" type="button" role="tab" aria-controls="nav-charter" aria-selected="false">Charter Route</button>
+                        <button class="nav-link text-white" id="nav-delivery-tab" data-bs-toggle="tab" data-bs-target="#nav-delivery" type="button" role="tab" aria-controls="nav-delivery" aria-selected="false">Delivery Route</button>
+                        <button class="nav-link text-white" id="nav-codeshare-tab" data-bs-toggle="tab" data-bs-target="#nav-codeshare" type="button" role="tab" aria-controls="nav-codeshare" aria-selected="false">Codeshare Route</button>
+                        <button class="nav-link text-white" id="nav-historic-tab" data-bs-toggle="tab" data-bs-target="#nav-historic" type="button" role="tab" aria-controls="nav-historic" aria-selected="false">Historic Route</button>
+                      </div>
+
+                      <div class="card-body">
+                        <div class="tab-content" id="nav-tabContent">
+                          <div class="tab-pane fade show active" id="nav-airasia" role="tabpanel" aria-labelledby="nav-airasia-tab">
+                            <div class="table-responsive">
+                              <table class="table table-bordered table-sm align-middle table-hover">
+                                <thead class="table-dark">
+                                  <tr>
+                                    <th scope="col">Departure</th>
+                                    <th scope="col">Arrival</th>
+                                    <th scope="col">Flight Time</th>
+                                    <th scope="col">Flight Type</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>Alor Setar (WMKA/AOR)</td>
+                                    <td>Kuala Lumpur (WMKK/KUL)</td>
+                                    <td>1:10</td>
+                                    <td>Regional - Indonesia</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                          <div class="tab-pane fade" id="nav-indo" role="tabpanel" aria-labelledby="nav-indo-tab">
+                            <div class="table-responsive">
+                              <table class="table table-bordered table-sm align-middle table-hover">
+                                <thead class="table-dark">
+                                  <tr>
+                                    <th scope="col">Departure</th>
+                                    <th scope="col">Arrival</th>
+                                    <th scope="col">Flight Time</th>
+                                    <th scope="col">Flight Type</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>Alor Setar (WMKA/AOR)</td>
+                                    <td>Kuala Lumpur (WMKK/KUL)</td>
+                                    <td>1:10</td>
+                                    <td>Regional - Indonesia</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                          <div class="tab-pane fade" id="nav-thai" role="tabpanel" aria-labelledby="nav-thai-tab">
+                            <div class="table-responsive">
+                              <table class="table table-bordered table-sm align-middle table-hover">
+                                <thead class="table-dark">
+                                  <tr>
+                                    <th scope="col">Departure</th>
+                                    <th scope="col">Arrival</th>
+                                    <th scope="col">Flight Time</th>
+                                    <th scope="col">Flight Type</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>Alor Setar (WMKA/AOR)</td>
+                                    <td>Kuala Lumpur (WMKK/KUL)</td>
+                                    <td>1:10</td>
+                                    <td>Regional - Indonesia</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                          <div class="tab-pane fade" id="nav-india" role="tabpanel" aria-labelledby="nav-india-tab">
+                            <div class="table-responsive">
+                              <table class="table table-bordered table-sm align-middle table-hover">
+                                <thead class="table-dark">
+                                  <tr>
+                                    <th scope="col">Departure</th>
+                                    <th scope="col">Arrival</th>
+                                    <th scope="col">Flight Time</th>
+                                    <th scope="col">Flight Type</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>Alor Setar (WMKA/AOR)</td>
+                                    <td>Kuala Lumpur (WMKK/KUL)</td>
+                                    <td>1:10</td>
+                                    <td>Regional - Indonesia</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                          <div class="tab-pane fade" id="nav-philipines" role="tabpanel" aria-labelledby="nav-philipines-tab">
+                            <div class="table-responsive">
+                              <table class="table table-bordered table-sm align-middle table-hover">
+                                <thead class="table-dark">
+                                  <tr>
+                                    <th scope="col">Departure</th>
+                                    <th scope="col">Arrival</th>
+                                    <th scope="col">Flight Time</th>
+                                    <th scope="col">Flight Type</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>Alor Setar (WMKA/AOR)</td>
+                                    <td>Kuala Lumpur (WMKK/KUL)</td>
+                                    <td>1:10</td>
+                                    <td>Regional - Indonesia</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                          <div class="tab-pane fade" id="nav-japan" role="tabpanel" aria-labelledby="nav-japan-tab">
+                            <div class="table-responsive">
+                              <table class="table table-bordered table-sm align-middle table-hover">
+                                <thead class="table-dark">
+                                  <tr>
+                                    <th scope="col">Departure</th>
+                                    <th scope="col">Arrival</th>
+                                    <th scope="col">Flight Time</th>
+                                    <th scope="col">Flight Type</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>Alor Setar (WMKA/AOR)</td>
+                                    <td>Kuala Lumpur (WMKK/KUL)</td>
+                                    <td>1:10</td>
+                                    <td>Regional - Indonesia</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                          <div class="tab-pane fade" id="nav-airasiax" role="tabpanel" aria-labelledby="nav-airasiax-tab">
+                            <div class="table-responsive">
+                              <table class="table table-bordered table-sm align-middle table-hover">
+                                <thead class="table-dark">
+                                  <tr>
+                                    <th scope="col">Departure</th>
+                                    <th scope="col">Arrival</th>
+                                    <th scope="col">Flight Time</th>
+                                    <th scope="col">Flight Type</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>Alor Setar (WMKA/AOR)</td>
+                                    <td>Kuala Lumpur (WMKK/KUL)</td>
+                                    <td>1:10</td>
+                                    <td>Regional - Indonesia</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                          <div class="tab-pane fade" id="nav-thaix" role="tabpanel" aria-labelledby="nav-thaix-tab">
+                            <div class="table-responsive">
+                              <table class="table table-bordered table-sm align-middle table-hover">
+                                <thead class="table-dark">
+                                  <tr>
+                                    <th scope="col">Departure</th>
+                                    <th scope="col">Arrival</th>
+                                    <th scope="col">Flight Time</th>
+                                    <th scope="col">Flight Type</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>Alor Setar (WMKA/AOR)</td>
+                                    <td>Kuala Lumpur (WMKK/KUL)</td>
+                                    <td>1:10</td>
+                                    <td>Regional - Indonesia</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                          <div class="tab-pane fade" id="nav-indox" role="tabpanel" aria-labelledby="nav-indox-tab">
+                            <div class="table-responsive">
+                              <table class="table table-bordered table-sm align-middle table-hover">
+                                <thead class="table-dark">
+                                  <tr>
+                                    <th scope="col">Departure</th>
+                                    <th scope="col">Arrival</th>
+                                    <th scope="col">Flight Time</th>
+                                    <th scope="col">Flight Type</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>Alor Setar (WMKA/AOR)</td>
+                                    <td>Kuala Lumpur (WMKK/KUL)</td>
+                                    <td>1:10</td>
+                                    <td>Regional - Indonesia</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                          <div class="tab-pane fade" id="nav-charter" role="tabpanel" aria-labelledby="nav-charter-tab">
+                            <div class="table-responsive">
+                              <table class="table table-bordered table-sm align-middle table-hover">
+                                <thead class="table-dark">
+                                  <tr>
+                                    <th scope="col">Departure</th>
+                                    <th scope="col">Arrival</th>
+                                    <th scope="col">Flight Time</th>
+                                    <th scope="col">Flight Type</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>Alor Setar (WMKA/AOR)</td>
+                                    <td>Kuala Lumpur (WMKK/KUL)</td>
+                                    <td>1:10</td>
+                                    <td>Regional - Indonesia</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                          <div class="tab-pane fade" id="nav-delivery" role="tabpanel" aria-labelledby="nav-delivery-tab">
+                            <div class="table-responsive">
+                              <table class="table table-bordered table-sm align-middle table-hover">
+                                <thead class="table-dark">
+                                  <tr>
+                                    <th scope="col">Departure</th>
+                                    <th scope="col">Arrival</th>
+                                    <th scope="col">Flight Time</th>
+                                    <th scope="col">Flight Type</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>Alor Setar (WMKA/AOR)</td>
+                                    <td>Kuala Lumpur (WMKK/KUL)</td>
+                                    <td>1:10</td>
+                                    <td>Regional - Indonesia</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                          <div class="tab-pane fade" id="nav-codeshare" role="tabpanel" aria-labelledby="nav-codeshare-tab">
+                            <p>Air Asia Virtual has so far had a relationship Codeshare with 4 VA in this world, while 4 VA Such:</p>
+
+                            <p><strong>1. Lion Group Virtual Airlines (LGVA)</strong></p>
+
+                            <p><img alt="LGVA" src="https://pirep.airasiavirtualif.com/vam/images/codeshare/LGVA.jpeg" style="height: 200px; width: 200px" /></p>
+
+                            <p>
+                              LGVA is a Virtual Airlines originating from Indonesia, which has Primary HUB in Jakarta (WIII), Kuala Lumpur (WMKK), and Bangkok (VTBD). currently has a Boeing 737-900ER Fleet, and an Airbus A320-200. LGVA Has
+                              IATA Code <strong>&quot;JT/ID&quot;</strong> In route database
+                            </p>
+
+                            <p><strong>2. Qatar Airways Virtual (QRV)</strong></p>
+
+                            <p>
+                              <strong><img alt="QRV" src="https://pirep.airasiavirtualif.com/vam/images/codeshare/QRV.png" style="height: 200px; width: 200px" /></strong>
+                            </p>
+
+                            <p>
+                              LGVA Is a Virtual Airlines originating from Qatar, which has a Primary HUB at Doha International Airport (OTHH). currently has Fleet Airbus A321-200, Airbus A350-900, Boeing 777-200/300ER, and Boeing 787-8. QRV
+                              Has IATA Code <strong>&quot;QR&quot;</strong> In route database.
+                            </p>
+
+                            <p><strong>3. Indigo Airlines Virtual (EVA)</strong></p>
+
+                            <p>
+                              <strong><img alt="EVA" src="https://pirep.airasiavirtualif.com/vam/images/codeshare/EVA.png" style="height: 83px; width: 200px" /></strong>
+                            </p>
+
+                            <p>
+                              EVA is a Virtual Airlines originating from India, which has a Primary HUB in Indira Gandhi International Airport (VIDP). currently has the Airbus A320-200 Fleet. EVA Has IATA Code
+                              <strong>&quot;6E&quot;</strong> in route database.
+                            </p>
+
+                            <p><strong>4. China Airlines Virtual (CIVA)</strong></p>
+
+                            <p>
+                              <strong><img alt="CIVA" src="https://pirep.airasiavirtualif.com/vam/images/codeshare/CIVA.png" style="height: 28px; width: 300px" /></strong>
+                            </p>
+
+                            <p>
+                              CIVA is a Virtual Airlines originating from Taiwan, which has a Primary HUB at Taipei International Airport (RCTP). currently has Fleet Airbus A350-900, Boeing 777-200/300ER. CIVA Has IATA Code
+                              <strong>&quot;CI&quot;</strong> in the route database.
+                            </p>
+                          </div>
+                          <div class="tab-pane fade" id="nav-historic" role="tabpanel" aria-labelledby="nav-historic-tab">
+                            <div class="table-responsive">
+                              <table class="table table-bordered table-sm align-middle table-hover">
+                                <thead class="table-dark">
+                                  <tr>
+                                    <th scope="col">Departure</th>
+                                    <th scope="col">Arrival</th>
+                                    <th scope="col">Flight Time</th>
+                                    <th scope="col">Flight Type</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>Alor Setar (WMKA/AOR)</td>
+                                    <td>Kuala Lumpur (WMKK/KUL)</td>
+                                    <td>1:10</td>
+                                    <td>Regional - Indonesia</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Route -->
+
+      <!-- Events -->
+      <section id="event">
+        <div class="row event">
+          <div class="col">
+            <div class="row justify-content-center">
+              <h1>Check Our Latest Events</h1>
+            </div>
+            <div class="col">
+              <div class="container-lg">
+                <div data-aos="fade-up">
+                  <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
+                    <div class="col">
+                      <img src="img/a320.jpeg" class="gallery-item" alt="gallery" />
+                    </div>
+                    <div class="col">
+                      <img src="img/a330.jpg" class="gallery-item" alt="gallery" />
+                    </div>
+                    <div class="col">
+                      <img src="img/a320.jpeg" class="gallery-item" alt="gallery" />
+                    </div>
+                    <div class="col">
+                      <img src="img/a320.jpeg" class="gallery-item" alt="gallery" />
+                    </div>
+                    <div class="col">
+                      <img src="img/a320.jpeg" class="gallery-item" alt="gallery" />
+                    </div>
+                    <div class="col">
+                      <img src="img/a320.jpeg" class="gallery-item" alt="gallery" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      // navbar background color change on scroll
-
-      $(window).scroll(function () {
-        var scroll = $(window).scrollTop();
-        if (scroll < 100) {
-          $(".fixed-top").css("background", "transparent");
-        } else {
-          $(".fixed-top").css("background", "rgba(255, 0, 0, 0.9)");
-        }
-      });
-    </script>
-    <script>
-      AOS.init();
-    </script>
+    <!-- Modal Event-->
+    <div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <!-- <div class="modal-header"> -->
+          <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+          <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+          <!-- </div> -->
+          <div class="modal-body">
+            <img src="img/a330.jpg" class="modal-img" alt="modal img" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Events -->
+    <!-- Modal Fleet A320-->
+    <div class="modal fade" id="a320Modal" tabindex="-1" aria-labelledby="a320ModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="a320ModalLabel">A320 Specification</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td class="table-dark">Range</td>
+                  <td>10,830 km (5,850 NM)</td>
+                </tr>
+                <tr>
+                  <td class="table-dark">Average Price (USD millions)</td>
+                  <td>US$253.7 Million</td>
+                </tr>
+                <tr>
+                  <td class="table-dark">Seating (Typical 3 Class)</td>
+                  <td>295</td>
+                </tr>
+                <tr>
+                  <td class="table-dark">Seating (Typical 2 Class)</td>
+                  <td>335</td>
+                </tr>
+                <tr>
+                  <td class="table-dark">Length</td>
+                  <td>58.82 Metres</td>
+                </tr>
+                <tr>
+                  <td class="table-dark">Wingspan</td>
+                  <td>60.3 Metres</td>
+                </tr>
+                <tr>
+                  <td class="table-dark">Wing Area</td>
+                  <td>122.6 Square Metres (1,320 sq ft)</td>
+                </tr>
+                <tr>
+                  <td class="table-dark">Tail Height</td>
+                  <td>16.83 Metres</td>
+                </tr>
+                <tr>
+                  <td class="table-dark">Fuselage Width (Exterior)</td>
+                  <td>5.64 Metres</td>
+                </tr>
+                <tr>
+                  <td class="table-dark">Cabin width (Interior)</td>
+                  <td>5.28 Metres</td>
+                </tr>
+                <tr>
+                  <td class="table-dark">Wheelbase</td>
+                  <td>33.10 Metres</td>
+                </tr>
+                <tr>
+                  <td class="table-dark">Freight Capacity</td>
+                  <td>168.8 Cubic Metres</td>
+                </tr>
+                <tr>
+                  <td class="table-dark">Operating Empty Weight</td>
+                  <td>124,500 kg</td>
+                </tr>
+                <tr>
+                  <td class="table-dark">MMaximum Take off Weight</td>
+                  <td>230,000 kg</td>
+                </tr>
+                <tr>
+                  <td class="table-dark">Takeoff distance at MTOW (Sea level)</td>
+                  <td>2,500 m (8,200 ft)</td>
+                </tr>
+                <tr>
+                  <td class="table-dark">Maximum Landing Weight</td>
+                  <td>185,000 kg</td>
+                </tr>
+                <tr>
+                  <td class="table-dark">Cruise Speed</td>
+                  <td>Mach 0.82</td>
+                </tr>
+                <tr>
+                  <td class="table-dark">Maximum Cruise Speed</td>
+                  <td>Mach 0.86</td>
+                </tr>
+                <tr>
+                  <td class="table-dark">Maximum Operating Speed</td>
+                  <td>Mach 0.89</td>
+                </tr>
+                <tr>
+                  <td class="table-dark">Maximum Fuel Capacity</td>
+                  <td>139,090 Litres</td>
+                </tr>
+                <tr>
+                  <td class="table-dark">Service Ceiling</td>
+                  <td>41,100 feet</td>
+                </tr>
+                <tr>
+                  <td class="table-dark">Maximum Service Ceiling</td>
+                  <td>42,651 feet</td>
+                </tr>
+                <tr>
+                  <td class="table-dark">Engine Option 1</td>
+                  <td>General Electric CF6-80E1. 70,000 lbf (311 kN)</td>
+                </tr>
+                <tr>
+                  <td class="table-dark">Engine Option 2</td>
+                  <td>Pratt & Whitney PW4000. 70,000 lbf (311 kN)</td>
+                </tr>
+                <tr>
+                  <td class="table-dark">Engine Option 3</td>
+                  <td>Rolls-Royce Trent 700. 71,100 lbf (316 kN)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal Fleet A320-->
+    <!-- Modal Fleet A330-->
+    <div class="modal fade" id="a330Modal" tabindex="-1" aria-labelledby="a330ModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="a330ModalLabel">A330 Specification</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td class="table-dark">Range</td>
+                  <td>10,830 km (5,850 NM)</td>
+                </tr>
+                <tr>
+                  <td class="table-dark">Average Price (USD millions)</td>
+                  <td>US$253.7 Million</td>
+                </tr>
+                <tr>
+                  <td class="table-dark">Seating (Typical 3 Class)</td>
+                  <td>295</td>
+                </tr>
+                <tr>
+                  <td class="table-dark">Seating (Typical 2 Class)</td>
+                  <td>335</td>
+                </tr>
+                <tr>
+                  <td class="table-dark">Length</td>
+                  <td>58.82 Metres</td>
+                </tr>
+                <tr>
+                  <td class="table-dark">Wingspan</td>
+                  <td>60.3 Metres</td>
+                </tr>
+                <tr>
+                  <td class="table-dark">Wing Area</td>
+                  <td>122.6 Square Metres (1,320 sq ft)</td>
+                </tr>
+                <tr>
+                  <td class="table-dark">Tail Height</td>
+                  <td>16.83 Metres</td>
+                </tr>
+                <tr>
+                  <td class="table-dark">Fuselage Width (Exterior)</td>
+                  <td>5.64 Metres</td>
+                </tr>
+                <tr>
+                  <td class="table-dark">Cabin width (Interior)</td>
+                  <td>5.28 Metres</td>
+                </tr>
+                <tr>
+                  <td class="table-dark">Wheelbase</td>
+                  <td>33.10 Metres</td>
+                </tr>
+                <tr>
+                  <td class="table-dark">Freight Capacity</td>
+                  <td>168.8 Cubic Metres</td>
+                </tr>
+                <tr>
+                  <td class="table-dark">Operating Empty Weight</td>
+                  <td>124,500 kg</td>
+                </tr>
+                <tr>
+                  <td class="table-dark">MMaximum Take off Weight</td>
+                  <td>230,000 kg</td>
+                </tr>
+                <tr>
+                  <td class="table-dark">Takeoff distance at MTOW (Sea level)</td>
+                  <td>2,500 m (8,200 ft)</td>
+                </tr>
+                <tr>
+                  <td class="table-dark">Maximum Landing Weight</td>
+                  <td>185,000 kg</td>
+                </tr>
+                <tr>
+                  <td class="table-dark">Cruise Speed</td>
+                  <td>Mach 0.82</td>
+                </tr>
+                <tr>
+                  <td class="table-dark">Maximum Cruise Speed</td>
+                  <td>Mach 0.86</td>
+                </tr>
+                <tr>
+                  <td class="table-dark">Maximum Operating Speed</td>
+                  <td>Mach 0.89</td>
+                </tr>
+                <tr>
+                  <td class="table-dark">Maximum Fuel Capacity</td>
+                  <td>139,090 Litres</td>
+                </tr>
+                <tr>
+                  <td class="table-dark">Service Ceiling</td>
+                  <td>41,100 feet</td>
+                </tr>
+                <tr>
+                  <td class="table-dark">Maximum Service Ceiling</td>
+                  <td>42,651 feet</td>
+                </tr>
+                <tr>
+                  <td class="table-dark">Engine Option 1</td>
+                  <td>General Electric CF6-80E1. 70,000 lbf (311 kN)</td>
+                </tr>
+                <tr>
+                  <td class="table-dark">Engine Option 2</td>
+                  <td>Pratt & Whitney PW4000. 70,000 lbf (311 kN)</td>
+                </tr>
+                <tr>
+                  <td class="table-dark">Engine Option 3</td>
+                  <td>Rolls-Royce Trent 700. 71,100 lbf (316 kN)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal Fleet A330 -->
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    $(window).scroll(function () {
+      var scroll = $(window).scrollTop();
+      if (scroll < 300) {
+        $(".fixed-top").css("background", "transparent");
+      } else {
+        $(".fixed-top").css("background", "rgba(255, 0, 0, 0.9)");
+      }
+    });
+
+    document.addEventListener("click", function (e) {
+      if (e.target.classList.contains("gallery-item")) {
+        const src = e.target.getAttribute("src");
+        document.querySelector(".modal-img").src = src;
+        const myModal = new bootstrap.Modal(document.getElementById("gallery-modal"));
+        myModal.show();
+      }
+    });
+  </script>
+  <script>
+    AOS.init();
+  </script>
 </html>
